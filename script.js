@@ -1,4 +1,3 @@
-// game.js
 const CONFIG = {
     techTree: {
         'agriculture': { 
