@@ -1,0 +1,66 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Древний Градостроитель</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 id="city-name">Новый Город</h1>
+        
+        <div class="game-controls">
+            <button onclick="nextYear()">Следующий год</button>
+            <button onclick="saveGame()">Сохранить</button>
+            <button onclick="newGame()" class="new-game-btn">Новая игра</button>
+        </div>
+        
+        <div class="tutorial">
+            <h3>Первые шаги:</h3>
+            <p>1. Постройте Лесопилку для добычи древесины</p>
+            <p>2. Постройте Охотничий лагерь для производства еды</p>
+            <p>3. Стройте Хижины для увеличения населения</p>
+        </div>
+        
+        <div class="stats">
+            <div>Год: <span id="year">1</span></div>
+            <div>Эпоха: <span id="era">Каменный век</span></div>
+            <div>Население: <span id="population">30</span></div>
+            <div>Мораль: <span id="morale">100</span>%</div>
+        </div>
+
+        <div class="resources">
+            <div>🪵 <span id="wood">80</span></div>
+            <div>🪨 <span id="stone">300</span></div>
+            <div>🌾 <span id="food">150</span></div>
+            <div>🪙 <span id="gold">30</span></div>
+        </div>
+
+        <div class="columns">
+            <div class="column">
+                <h3>Технологии:</h3>
+                <div id="tech-list"></div>
+                
+                <h3>Исследовать:</h3>
+                <div id="research-list"></div>
+            </div>
+            
+            <div class="column">
+                <h3>Постройки:</h3>
+                <div id="buildings-list"></div>
+                
+                <h3>Действия:</h3>
+                <div id="actions-list"></div>
+            </div>
+        </div>
+
+        <div class="event-log" id="event-log">
+            <h3>События:</h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
